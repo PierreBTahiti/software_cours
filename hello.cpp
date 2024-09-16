@@ -1,7 +1,20 @@
-#include <stdio.h>
+#include <HelloProjConfig.h>
+#include <iostream>
 
-int main(){
-	printf("Hello, World");
-	return 0;
+
+void hello_world() {
+	std::cout << "Hello World!\n";
 }
 
+void print_version() {
+	std::cout << "project version is "
+		<< HelloProj_VERSION_MAJOR
+		<< "."
+		<< HelloProj_VERSION_MINOR
+		<< std::endl;
+}
+int main()
+{
+	hello_world();
+	print_version();
+}
