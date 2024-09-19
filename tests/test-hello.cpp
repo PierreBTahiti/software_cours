@@ -1,6 +1,6 @@
-#include <basic/message.h>
-
-int main() {
-	hello_world();
-	return 0;
+#include<basic/message.h>
+int main()
+{
+hello_world();
+return 0;
 }
