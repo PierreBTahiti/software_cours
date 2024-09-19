@@ -18,6 +18,14 @@ add_subdirectory(src/basic)
 #add executable, et change la direction vers mains où est le nouveau cmakelists.txt 
 option(HELLOWORD_WITH_EXECUTABLES "Compile mains" ON)
 if(HELLOWORD_WITH_EXECUTABLES)
- message(STATUS "Configuring Hello World with executables")
- add_subdirectory(mains)
+	message(STATUS "Configuring Hello World with executables")
+	add_subdirectory(mains)
+endif()
+
+#add tests
+option(HELLOWORD_WITH_TESTS "Compile tests" ON)
+if (HELLOWORD_WITH_TESTS)
+	enable_testing() #active le module CTest
+	message(STATUS "Configuring Hello World with tests")
+	add_subdirectory(tests)
 endif()
