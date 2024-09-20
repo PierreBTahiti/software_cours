@@ -1,4 +1,4 @@
-mkdir build
+If not exist "build" mkdir build
 cd build
 cmake ..
 cmake --build .
