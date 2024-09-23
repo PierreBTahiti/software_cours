@@ -1,7 +1,7 @@
 #include <HelloProjConfig.h>
 #include <iostream>
 
-   // j'ai fait les nv cmake config oui
+// j'ai fait les nv cmake config oui
 
 void hello_world()
 {
@@ -14,20 +14,20 @@ void print_version()
               << HelloProj_VERSION_MINOR << std::endl;
 }
 
-    // j'ai fait les nv cmake config
+// j'ai fait les nv cmake config
 
 void hello_world()
 {
-        std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n";
 }
 
 void print_version()
 {
-        std::cout << "project version is " << HelloProj_VERSION_MAJOR << "."
-                  << HelloProj_VERSION_MINOR << std::endl;
+    std::cout << "project version is " << HelloProj_VERSION_MAJOR << "."
+              << HelloProj_VERSION_MINOR << std::endl;
 }
 int main()
 {
-        hello_world();
-        print_version();
+    hello_world();
+    print_version();
 }
