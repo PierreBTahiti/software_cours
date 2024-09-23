@@ -8,7 +8,7 @@ RUN apt-get update && apt-get upgrade
 RUN apt-get install -y cmake ninja-build build-essential
 
 # Copy source code here
-COPY . MyProject
+#COPY . MyProject
 
 # Create building directory
 # RUN mkdir MyProject/build
