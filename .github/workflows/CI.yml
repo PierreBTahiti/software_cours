@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: ["main"]
+env:
+  BUILD_TYPE: Release
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Configure CMake
+      run:
+        mkdir build
+        cd build
+        cmake -DCMAKE8BUILD8TYPE=${{env.BUILD_TYPE}} ..
+        cmake --build . --config ${{envi.BUILD_TYPE}}
+        ctest -C ${{env.BUILD_TYPE}}
+  
