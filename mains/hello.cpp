@@ -1,7 +1,7 @@
 #include <HelloProjConfig.h>
 #include <iostream>
 <<<<<<< HEAD
-    // j'ai fait les nv cmake config
+    // j'ai fait les nv cmake config oui
 
     void
     hello_world()
