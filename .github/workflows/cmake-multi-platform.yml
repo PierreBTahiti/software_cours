@@ -4,7 +4,7 @@ name: CICD
 
 on:
   push:
-    branches: [ "git CICD" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -25,7 +25,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         build_type: [Release]
-        c_compiler: [gcc, clang, cl]
+        c_compiler: [gcc, clang, cl, blbl]
         include:
           - os: windows-latest
             c_compiler: cl
