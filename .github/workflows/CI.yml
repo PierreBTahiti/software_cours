@@ -14,6 +14,6 @@ jobs:
         mkdir build
         cd build
         cmake -DCMAKE8BUILD8TYPE=${{env.BUILD_TYPE}} ..
-        cmake --build . --config ${{envi.BUILD_TYPE}}
+        cmake --build . --config ${{env.BUILD_TYPE}}
         ctest -C ${{env.BUILD_TYPE}}
   
