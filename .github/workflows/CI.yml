@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Configure CMake
-      run:
+      run: |
         mkdir build
         cd build
         cmake -DCMAKE8BUILD8TYPE=${{env.BUILD_TYPE}} ..
